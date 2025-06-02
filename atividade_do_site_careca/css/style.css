@@ -1,0 +1,29 @@
+
+@font-face {
+    font-family:gicos ;
+    src: url(../font/Onest-VariableFont_wght.ttf);
+}
+*{
+  
+Margin: 0px
+}
+.titulo{
+    font-family:gicos ;
+}
+.cabecalho{
+   background-color:#1c3433;
+   height: 86px;
+}
+.cabecalho img{
+    height: 40px;
+   
+}
+.navegacao>ul{    
+    list-style: none;
+    display: flex;
+}
+.navegacao>ul a{
+    color: aliceblue;
+    margin: 15px;
+
+}

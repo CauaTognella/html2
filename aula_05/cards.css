@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+}
+ 
+.fundo{
+    height: 100vh;
+}
+    .grade{
+        display: grid;
+        grid-template-columns: 400px 400px 400px;
+        grid-template-rows: 500px 500px 500px;
+    }
+p{
+    margin: 10px;
+}
+ 
+.quadrado-pai {
+ 
+    width: 270px;
+    height: 370px;
+ 
+    /* margin: 10px 20px 20px 100px; */
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+ 
+ 
+ 
+    padding: 10px;
+ 
+ 
+    background-color: #05171f;
+    color: #6c44d8;
+    border-radius: 20px;
+    text-align: center;
+    border: 3px solid black;
+}
+ 
+ 
+.quadrado-pai img{
+    height: 220px;
+    width: 100%;
+    border-radius: 20px;
+ 
+    object-fit: cover;
+    object-position: center;
+}
+ 
+ 
+.quadrado-pai a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    text-transform: lowercase;
+    font-family: 'Trebuchet MS';
+ 
+    background-color: #012030;
+ 
+    padding: 5px;
+    border-radius: 20px;
+    border: 3px solid #3f4636;
+   
+    transition: 0.5s;
+}
+ 
+.quadrado-pai a:hover {
+    transition: 0.5s;
+    border: 3px solid #010120;
+    background-color: #3f4636;
+    box-shadow: 6px -7px 89px 10px rgba(255, 255, 255, 0.66);
+    -webkit-box-shadow: 6px -7px 89px 10px rgba(255, 255, 255, 0.66);
+    -moz-box-shadow: 6px -7px 89px 10px rgba(255, 255, 255, 0.66);
+  }
+   
