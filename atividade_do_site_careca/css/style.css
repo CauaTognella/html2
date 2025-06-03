@@ -7,8 +7,26 @@
   
 Margin: 0px
 }
-.titulo{
+.carecudo{
+    background-image: url(../img/o_careca.jpg);
+    background-size: cover; 
     font-family:gicos ;
+    color:#ffff;
+    font-size: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;    /* Centraliza verticalmente */
+    justify-content: flex-start; 
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    
+   
+}
+.fundo>h2{
+
+    font-size: 18px;
 }
 .cabecalho{
    background-color:#1c3433;
@@ -27,3 +45,27 @@ Margin: 0px
     margin: 15px;
 
 }
+.destaque{
+    color: #53cc6c;
+    font-family:gicos;
+
+}
+.texto{
+
+    width: 100vw;   
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start; /* Alinha na esquerda */
+    align-items: center; /* Centraliza verticalmente */
+    padding-left: 60px;
+    background-color: #0f2626; /* Apenas para visualizar */
+    
+}
+.texto h1{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 48px;
+    line-height: 1.2;
+    
+}
+
