@@ -7,42 +7,59 @@
   
 Margin: 0px
 }
-.carecudo{
-    background-image: url(../img/o_careca.jpg);
-    background-size: cover; 
-    font-family:gicos ;
+
+p{
+font-size: 18px;
+width: 600px;
+margin-left: 160px;
+margin-bottom: 60px;
+
+
+}
+.carecudo>h1{
     color:#ffff;
     font-size: 60px;
-    text-align: center;
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center;    /* Centraliza verticalmente */
-    justify-content: flex-start; 
-    height: 100vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    
+    font-family:gicos;
+    margin-left: 150px;
+    width: 700px; 
    
 }
-.fundo>h2{
 
-    font-size: 18px;
+   .carecudo /*da imagem */{  
+    background-image: linear-gradient(to right, rgba(28, 52,51,0.9), rgba(28, 52,51,0.4)), url(../img/o_careca.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    align-content: center;
+    
+    
 }
+
+
 .cabecalho{
    background-color:#1c3433;
    height: 86px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
 }
 .cabecalho img{
     height: 40px;
+    
    
 }
 .navegacao>ul{    
     list-style: none;
     display: flex;
+    margin-left: 150px;
 }
 .navegacao>ul a{
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     margin: 15px;
+   
+
+    
+    
 
 }
 .destaque{
@@ -50,22 +67,45 @@ Margin: 0px
     font-family:gicos;
 
 }
-.texto{
 
-    width: 100vw;   
-    height: 100vh;
-    display: flex;
-    justify-content: flex-start; /* Alinha na esquerda */
-    align-items: center; /* Centraliza verticalmente */
-    padding-left: 60px;
-    background-color: #0f2626; /* Apenas para visualizar */
-    
+
+.a1{
+     
+      color: #53CC6C; /* Cor do texto */
+      padding: 10px 20px; /* Espaçamento interno */
+      border: 1px solid #53CC6C;/* coloca borda */
+      border-radius: 5px; /* Bordas arredondadas */
+      font-size: 16px; /* Tamanho da fonte */
+      margin-left: 160px;
+      text-decoration: none;
+      
 }
-.texto h1{
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    font-size: 48px;
-    line-height: 1.2;
+.pagina_2{
+  display: flex;
+
+}
+
+.careca_azul{
+    width: 960px ;
+    height:100vh ;
+    object-fit: cover;
+    object-position: top;
+}
+.pagina_2{
+    height: 100vh;
+    background-color: #2B2D3D;
+    
+  
+}
+.pagina_2 h1{
+    color: #53CC6C;
+    font-size: 46px;
+    margin-left: 150px;
+    width: 700px; 
+    margin-top: 150px;
+}
+.pagina_2 p{
+    font-size: 18px;
     
 }
 
