@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<header class="cabecalho">
+    <a class="botao_de_pesquisa" href="./pesquisa.html">pesquisa de personagem</a>
+    <h1 class="text-center mb-4"> rick and morty</h1>
+</header>
+
+<body> 
+    <div class="container">
+        <div id="ram-container" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+        </div>
+    </div>
+
+
+
+    <script>
+        const container = document.getElementById("ram-container")
+
+        function predador(id) {
+          //  fetch("https://rickandmortyapi.com/api/character/" + id)
+            return fetch("https://rickandmortyapi.com/api/character/" + id)
+                .then(function (resposta) {
+                    return resposta.json();
+
+                })
+
+        }
+        async function sansung() {
+            for (i = 1; i <= 26; i++) {
+                const abubu = await predador(i)
+
+                let id = abubu.id
+                let nome = abubu.name
+                let img = abubu.image
+                console.log(id, nome, img)
+
+                const colun = document.createElement('div')
+                colun.className = 'col'
+                colun.innerHTML = ` 
+                        <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                                <img src="${img}" alt="${nome}" class="persona-img mb-2">
+                                <h5 class="card-title">${nome}</h5>
+                                <p class="card-text text-muted">#${id}</p>
+                            </div>
+                        </div> 
+                         `
+
+                container.appendChild(colun)
+
+            }
+
+
+        }
+
+        sansung()
+
+    </script>
+</body>
+
+</html>
