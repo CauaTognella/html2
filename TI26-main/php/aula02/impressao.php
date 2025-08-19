@@ -10,12 +10,12 @@ include './tamplete/header.php';
         // $senhaConfirmarForm = $_POST['txtConfirmarSenha'];
 
         $id= $_GET['idConsulta'];
-        $DSN = 'mysql:dbname=db_cadastro;host=127.0.0.1';
+        $DSN = 'mysql:dbname=db_formulario;host=127.0.0.1';
         $usuario = 'root';
         $senha = '';
         $conexao = new PDO ($DSN, $usuario, $senha);
 
-        $script = "SELECT * FROM tb_usuarios WHERE id = $id";
+        $script = "SELECT * FROM tb_cadastro WHERE id = $id";
         $resultadoc = $conexao->query($script)->fetch();
 
     ?>

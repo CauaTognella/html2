@@ -3,13 +3,13 @@ include './tamplete/header.php';
 
 
 
-$dsn = 'mysql:dbname=db_cadastro;host=127.0.0.1';
+$dsn = 'mysql:dbname=db_formulario;host=127.0.0.1';
 $usuario = 'root';
 $senha = '';
 
 $conexaoBanco = new PDO($dsn, $usuario, $senha);
 
-$scriptConsulta = 'SELECT * FROM tb_usuarios';
+$scriptConsulta = 'SELECT * FROM tb_cadastro';
 
 
 $resultadoConsulta = $conexaoBanco->query($scriptConsulta)->fetchAll();
